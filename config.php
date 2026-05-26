@@ -1,4 +1,8 @@
 <?php
+// Paksa PHP menampilkan error ke browser (Hanya untuk testing/development!)
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 // Mengambil konfigurasi dari Environment Variables di Cloud Run
 $db_host = getenv('DB_HOST') ?: '127.0.0.1';
 $db_user = getenv('DB_USER') ?: 'root';
